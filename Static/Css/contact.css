@@ -1,0 +1,63 @@
+*{
+    background-image: none;
+}
+
+body{
+    padding-top: 50px; /* Add padding-top to body equal to the height of the navbar */
+	overflow-x: hidden;
+    padding-top: 70px;
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #F7567C;
+	height: 70px;
+	padding: 0 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+nav .logo {
+	font-size: 25px;
+	font-weight: inherit;
+	color: white;
+}
+
+nav ul.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+nav ul.menu li {
+	margin: 0 10px;
+    padding-right: 10px;
+}
+
+nav ul.menu li a {
+	text-decoration: none;
+	color:white;
+	font-size: 25px;
+	transition: all 0.3s ease;
+	padding: 10px 0;
+}
+
+nav ul.menu li a:hover {
+	border-bottom: 2px solid whitesmoke;
+}
+
+.main{
+    font-family: cursive;
+    align-items: center;
+    text-align: center;
+}

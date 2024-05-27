@@ -1,0 +1,120 @@
+*{
+    background-image: none;
+}
+
+body{
+	padding-top: 70px; /* Add padding-top to body equal to the height of the navbar */
+}
+
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #F7567C;
+	height: 70px;
+	padding: 0 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+nav .logo {
+	font-size: 25px;
+	font-weight: inherit;
+	color: white;
+}
+
+nav ul.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+nav ul.menu li {
+	margin: 0 10px;
+    padding-right: 10px;
+}
+
+nav ul.menu li a {
+	text-decoration: none;
+	color:white;
+	font-size: 25px;
+	transition: all 0.3s ease;
+	padding: 10px 0;
+}
+
+nav ul.menu li a:hover {
+	border-bottom: 2px solid whitesmoke;
+}
+
+.bg-pink{
+    background-color: #F7567C;
+}
+
+table{
+	width: 100%;
+  }
+  
+  .thead-pink{
+	  background-color: #F7567C;
+	  color: #fff;
+  }
+  
+  tbody{
+	  background-color: #f1d5dc;
+  }
+  
+  .treatment{
+	  font-family: 'Raleway', sans-serif;
+  }
+
+  /* card css starts here  */
+.card{
+    height: 200px;
+    border-radius: 0.75rem;
+    margin-bottom: 2vh;
+}
+
+.card .btn-pink{
+  background-color: #F7567C;
+  color: #fff;
+}
+
+.card img{
+    border-radius: 0.75rem;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.info{
+    font-size: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card:hover .hospital-image{
+  opacity: 0.3;
+}
+
+.card:hover .info{
+  opacity: 1;
+}
+  
