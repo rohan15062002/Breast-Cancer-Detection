@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Classification </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="/Static/Css/classify.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Css/classify.css') }}">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <div class="logo"> Breast Cancer Prediction</div>
+            <ul class="menu">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="#">Classify</a></li>
+                <li><a class="nav-link" href="{{ url_for('treatment') }}">Treatment</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a class="nav-link" href="{{ url_for('faq') }}">FAQs</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="form"> 
+
+        <div class="web-title">
+            <h1> Advanced Breast Prediction Using Deep Learning</h1>
+            <p> Select an image for Prediction</p>
+        </div>
+
+        <form id="predict-form" method="POST" action="/predict" enctype="multipart/form-data">
+            <label for="image-file" class="custom-label">Insert Your Image</label>
+            <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png" class="custom-label">
+            <br><br>
+            <input type="submit" value="Predict Cancer">
+        </form>
+        <div id="result"></div>
+    </main>
+
+    <footer>
+        <script src="/Static/Javascript/script.js"></script>
+    </footer>
+</body>
+</html>

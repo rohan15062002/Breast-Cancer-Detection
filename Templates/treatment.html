@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Team </title>
+    <!-- links including fonts and third part library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/Static/Css/team.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Css/treatment.css') }}">
+    
+
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+            <div class="logo"> Breast Cancer Prediction</div>
+            <ul class="menu">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('classify') }}">Classify</a></li>
+                <li><a class="nav-link" href="#">Treatment</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a class="nav-link" href="{{ url_for('faq') }}">FAQs</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+  
+
+    <!-- contents starts here  -->
+    <div class="treatment">
+      <div class="container">
+          <h1 class="text-center">Treatment</h1>
+          <div class="cost text-center">
+              <h3>Average Treatment Cost(All cost in USD)</h3>
+              <div class="table-responsive">
+                <table class="table treatment-cost">
+                  <thead class="thead-pink">
+                      <tr>
+                          <th scope="col">PET Scan</th>
+                          <th scope="col">Chemotherapy</th>
+                          <th scope="col">Radiation Therapy</th>
+                          <th scope="col">Surgery</th>
+                          <th scope="col">Average Cost</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">$250</th>
+                          <td>$300-$480</td>
+                          <td>$2800</td>
+                          <td>$2200-$3000</td>
+                          <td>$4000</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <h3>Accommodation Cost</h3>
+              <table class="table accommodations">
+                  <thead class="thead-pink">
+                      <tr>
+                          <th scope="col">Days in Hospital</th>
+                          <th scope="col">Cost of Stay In Hotel</th>
+                          <th scope="col">Cost of Service Apartments</th>
+                          <th scope="col">Total duration of stay</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">3 Days</th>
+                          <td>$40 – $50 per day</td>
+                          <td>$35 per day</td>
+                          <td>20 Days</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <br>
+              <h3>Top Cancer Specialty Hospitals In India</h3>
+              <div class="wrapper">
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <div class="card">
+                              <img class="hospital-image" src="https://www.thehindu.com/news/cities/mumbai/oqtgz2/article31275275.ece/ALTERNATES/LANDSCAPE_1200/7BMTATAMEMORIAL" alt="tata memorial hospital">
+                              <div class="info">
+                                  <h3>Tata Memorial Hospital, Mumbai</h3>
+                                  <a target="_blank" href="https://tmc.gov.in/index.php/en/" class="btn btn-pink">Visit Site</a>
+                              </div>
+                          </div>
+                      </div>
+                      <br>
+                      <div class="col-sm-4">
+                          <div class="card">
+                              <img class="hospital-image" src="https://feeds.abplive.com/onecms/images/uploaded-images/2023/08/03/0dcb110a81b83cc85ea7831204ac9d291691065752412756_original.jpeg" width="400px" alt="AIIMS Delhi">
+                              <div class="info">
+                                  <h3>AIIMS, Delhi</h3>
+                                  <a target="_blank" href="https://www.aiims.edu/en.html" class="btn btn-pink">Visit Site</a>
+                              </div>
+                          </div>
+                      </div>
+                      <br>
+                      <div class="col-sm-4">
+                          <div class="card">
+                              <img class="hospital-image" src="https://th-i.thgim.com/public/news/cities/chennai/article23517765.ece/alternates/LANDSCAPE_1200/13THCANCERINSTITUTE" width="400px" alt="The Cancer Institute, Adyar, Chennai">
+                              <div class="info">
+                                  <h3>The Cancer Institute, Chennai</h3>
+                                  <a target="_blank" href="http://cancerinstitutewia.in/CI-WIA/" class="btn btn-pink">Visit Site</a>
+                              </div>
+                          </div>
+                      </div>
+                      <br>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <footer></footer>
+</body>
+</html>

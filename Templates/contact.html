@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us | Breast Cancer Awareness</title>
+    <!-- links including fonts and third part library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap">
+      <link rel="stylesheet" href="/Static/Css/about.css">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Css/contact.css') }}">
+
+</head>
+<body>
+
+  <header>
+        
+    <nav>
+        <div class="logo"> Breast Cancer Prediction</div>
+        <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('classify') }}">Classify</a></li>
+            <li><a class="nav-link" href="{{ url_for('treatment') }}">Treatment</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a class="nav-link" href="{{ url_for('faq') }}">FAQs</a></li>
+        </ul>
+    </nav>
+    
+</header>
+    <br>
+    <div class="contact text-center">
+        <h2>Fill up this form to get a call back from our Doctor.</h2>
+        <p style="color: red;">*THIS FORM WILL WORK BUT ISN'T REAL!</p>
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <form action="" name="contact" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true">
+              <p class="hidden" style="visibility: hidden; z-index: -100; position: absolute">
+                <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+              </p>
+              <input type="text" class="form-control" name="firstName" placeholder="First Name">
+              <br>
+              <input type="text" class="form-control" name="lastName" placeholder="Last Name">
+              <br>
+              <input type="tel" class="form-control" name="phonenumber" placeholder="Phone Number" min=10 max=12 name="" id="">
+              <br>
+              <input type="email" name="emailID" id="" class="form-control" placeholder="Email">
+              <br>
+              <label for="" class="float-left"> Choose a file to upload(optional):</label>
+              <input type="file" id="myFile" name="filename" class="float-left" >
+              <label for="" class="float-left" style="margin-bottom: 5vh;">Don't upload file greater than 1MB.</label>
+              <br>
+              <textarea name="textarea" id="" cols="45" rows="5" class="form-control" placeholder="Write your problem here..."></textarea>
+              <br>
+              <div data-netlify-recaptcha="true"></div>
+              <br>
+              <button type="submit" class="btn btn-success btn-lg float-right"">Submit</button>
+            </form>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

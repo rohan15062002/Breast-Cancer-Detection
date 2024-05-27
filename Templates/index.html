@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home page</title>
+    <!-- links including fonts and third part library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='Css/style.css') }}"
+    />
+
+    
+
+  </head>
+  <body>
+    <header>
+      <nav class="fixed-top">
+        <div class="logo">Breast Cancer Predicition</div>
+        <ul class="menu">
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="{{ url_for('classify') }}">Classify</a></li>
+            <li><a class="nav-link" href="{{ url_for('treatment') }}">Treatment</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li><a class="nav-link" href="{{ url_for('faq') }}">FAQs</a></li>
+        </ul>
+      </nav>
+
+
+    </header>
+
+    <main class="main">
+      <!-- hero figure starts here  -->
+      <div class="container-fluid hero-figure">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content">
+              <h1>
+                Your one stop for everything related to
+                <span
+                  style="
+                    color: #fff;
+                    background-color: #f7567c !important;
+                    border-radius: 25px;
+                    padding: 4px 7px;
+                  "
+                  id="hero-figure-text"
+                  >Breast Cancer</span
+                >.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <!-- hero figure ends here  -->
+
+      <!-- stat content starts here  -->
+      <div class="container">
+        <div class="stat-content">
+          <div class="row align-items-center">
+            <div class="col-md-12">
+              <h2 class="heading text-center">Let's Talk Statistics</h2>
+            </div>
+          </div>
+          <br />
+          <div class="row align-items-center incidence-rates">
+            <div class="col-md-6 text-center">
+              <img
+                src="https://d3i71xaburhd42.cloudfront.net/a9d810a78218c0d40bdbe900fb3f8b8c0241674d/3-Figure1-1.png"
+                alt="roll over map for country incident rates"
+                height="300vh"
+                width="100%"
+              />
+            </div>
+            <div class="col-md-6 align-items-center">
+              <h3>World Breast Cancer Incidence Rates</h3>
+              <p>
+                According to a survey published by
+                <a target="_blank" href="https://www.iarc.fr/">IARC</a>, in
+                2010, the USA appears to have the highest incidence rate for
+                breast cancer.
+              </p>
+            </div>
+          </div>
+          <br />
+          <div class="row align-items-center cancer-frequency">
+            <div class="col-md-6 align-items-center">
+              <h3>Breast Cancer Frequency</h3>
+              <p>
+                According to
+                <a
+                  target="_blank"
+                  href="https://www.who.int/cancer/prevention/diagnosis-screening/breast-cancer/en/"
+                  >WHO</a
+                >
+                Breast cancer is the most frequent cancer among women, impacting
+                2.1 million women each year, and also causes the greatest number
+                of cancer-related deaths among women. In 2018, it is estimated
+                that 627,000 women died from breast cancer – that is
+                approximately 15% of all cancer deaths among women.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img
+                src="https://www.nationalbreastcancer.org/wp-content/uploads/BC-Stats-v04_1-in-8-women-Landscape-1024x575.png"
+                alt="roll over map for country incident rates"
+                height="300vh"
+                width="100%"
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row align-items-center cancer-mortality" >
+            <div class="col-md-6 align-items-center">
+              <img
+                src="Static/assets/media/20200925_210520.jpg"
+                alt="cancer mortality in women"
+                height="400vh"
+                width="100%"
+              />
+            </div>
+            <div class="col-md-6 text-center">
+              <h3>Cancer Mortality rate in Women</h3>
+              <p>Breast Cancer has the 2nd highest mortality rate in women.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- stat content ends here  -->
+    </main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h4>ABOUT</h4>
+            <p class="text-justify">
+              This site is made for B.Tech Project Presentation. This
+              website also serves the purpose of prediction and spreading awareness related to
+              Breast Cancer. <br />
+              <p class="text-justify">
+                This project is jointly made by 1. 
+                <a
+                target="_blank"
+                href="https://www.linkedin.com/in/rohanmishra1506/"
+                >Rohan Mishra</a>
+                2. <a
+                target="_blank"
+                href="https://www.linkedin.com/in/sudhanshu-kumar-a89497203/"
+                >Sudhanshu Kumar</a>
+                3.
+                <a
+                target="_blank"
+                href="https://www.linkedin.com/in/poonam-arya-720b151b6/"
+                >Km. Poonam</a> under the mentorship of 
+                <a
+                target="_blank"
+                href="https://sites.google.com/view/pksmmmut/home"
+                >
+                Professor P.K Singh
+                </a>.
+              <br />
+              This site is open source and the source code can be found
+              <a
+                target="_blank"
+                href="https://github.com/rohan15062002/Breast-Cancer-Awareness"
+                >here.</a>
+            </p>
+          </div>
+          <div class="col-xs-6 col-md-3"></div>
+          <div class="col-xs-6 col-md-3">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="/">Home <i class="fas fa-home"></i></a>
+              </li>
+              <li>
+                <a href="/classify"
+                  >Classify <i class="fas fa-stethoscope"></i
+                ></a>
+              </li>
+              <li>
+                <a href="/treatment"
+                  >Treatment <i class="fas fa-hospital"></i
+                ></a>
+              </li>
+              <li>
+                <a href="/contact"
+                  >Contact <i class="fas fa-phone-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="/faq"
+                  >FAQs <i class="fas fa-comment-dots"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text fs-4">
+              Copyright &copy; 2024 All Rights are Reserved.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a
+                  target="_blank"
+                  class="facebook"
+                  href="https://www.facebook.com/"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="dribbble"
+                  href="https://www.instagram.com/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="linkedin"
+                  href="https://www.linkedin.com/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

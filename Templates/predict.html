@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+       <!-- links including fonts and third part library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='Css/predict.css') }}"
+    />
+</head>
+<body>
+    <header>
+        <nav class="fixed-top">
+          <div class="logo">Breast Cancer Predicition</div>
+          <ul class="menu">
+              <li><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+              <li><a class="nav-link" href="{{ url_for('classify') }}">Classify</a></li>
+              <li><a class="nav-link" href="{{ url_for('treatment') }}">Treatment</a></li>
+              <li><a href="{{ url_for('contact') }}">Contact</a></li>
+              <li><a class="nav-link" href="{{ url_for('faq') }}">FAQs</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <div class="container d-flex justify-content-center">
+        <div class="text-center">
+            <h1>Prediction Result</h1>
+            <div class="result">
+                <p>Predicted Class: <strong>{{ predicted_class }}</strong></p>
+            </div>
+            <div class="probabilities">
+                <p>Probabilities:</p>
+                <ul class="list-unstyled">
+                    {% for class_name, probability in probabilities.items() %}
+                        <li class="probability">{{ class_name }}: {{ probability }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
